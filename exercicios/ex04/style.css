@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited { /*pseudo-classe*/
+    color: darkgreen;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active { /*pseudo-classe que mostra quando esta ativo... nesse caso, quando o mouse clicar no link, ele ficara amarelo*/
+    color: yellow; 
+}
+
+
+

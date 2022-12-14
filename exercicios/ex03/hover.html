@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+
+        /*
+        #id = id
+        . = class
+        : pseudo-class
+        :: pseudo-element
+        > = children
+        */
+        
+        /*Aqui eu estou selecionando que vou mexer em um paragrafo que esta dentro da div, e nao na propria div*/
+    div > p {
+        display: none;
+    }
+
+    /*Aqui eu estou dizendo que quando eu passar o mouse em cima da div, ela vai me mostrar o conteudo "escondido" do p*/
+    div:hover > p {
+        display: block;
+        color: white;
+        background-color:black;
+        width: 300px;
+    }
+    
+    div:hover {
+        color: green 
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <div>
+        passe o mouse aqui
+        <p>Texto escondido...</p>
+    </div>
+
+</body>
+</html>

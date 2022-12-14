@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #84e1ad;
+    font-family: 'idroid';
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(89, 218, 145), rgb(18, 100, 18));
+    width: 100%;
+    display: inline-block;
+
+}
+
+h1, h2 {
+    color: #034e03;
+}
+
+.imagens {
+    text-align: center;
+}
+
+.tema, .subtema {
+    color: rgba(255, 255, 255, 0.836);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.subtema {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 10px 55px 90px black;
+
+}
+
+span {
+    color: #16b416
+}
+
+nav > a:hover {
+    color: rgba(81, 255, 0, 0.788);
+}

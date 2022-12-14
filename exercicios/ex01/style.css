@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(to right, rgb(226, 150, 163), rgb(122, 98, 255), rgb(241, 48, 241));
+}
+
+h1, h2 {
+    font-style: italic;
+    text-align: center;
+}
+
+
+p {
+    font-style: oblique;
+    text-align: justify;
+}
+ .borda1 {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 510px;
+    height: 50px;
+ }
+
+ .borda2 {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    padding: 5px;
+ }
