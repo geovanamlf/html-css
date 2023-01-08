@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 2.5px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(153, 150, 150);
+            padding: 2.5px;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pop {
+            width: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABLES GRANDES
+
+        TABLE
+            CAPTION
+            THEAD 
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>Populacao das Unidades federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--o "scope="#"  serve para dizer em que segmento os dados estao indo, ex: o th estado tem os seus td seguindo em baixo dele, para isso usa a propriedade "col", ja se o seguimento do th > td for na mesma linha, entao se usa "row"  "-->
+                <th scope="col" class="pop">Populacao</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000 apx</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
