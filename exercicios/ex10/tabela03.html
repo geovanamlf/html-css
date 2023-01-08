@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: lightgray;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            background-color: white;
+        }
+
+        .tab2 > table, .tab3 > table, .tab4 >table {
+            border-collapse: separate;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Mesclagem de cedulas em tabelas</h1>
+
+        <table>
+
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td> <!--spansao usada para dizer o quanto uma COLUNA ou linha vai ocupar na tabela, nesse caso, o td "b" esta a ocupar DUAS *COLUNUNAS*-->
+            </tr>
+
+            <tr>
+                <td rowspan="3">D</td> <!--espansao de linhas-->
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+
+            <tr>
+                <td>H</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">L</td>
+            </tr>
+
+        </table>
+
+    <h2>Desafio 1 modulo 3 de tabelas</h2>
+
+    <div class="tab2">
+
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <h2>Desafio 2 modulo 3 de tabelas</h2>
+
+    <div class="tab3">
+
+        <table>
+            <tr>
+                <td colspan ="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+            
+        </table>
+
+    </div>
+
+    <h2>Desafio 3 do modulo 3 de tabelas</h2>
+
+    <div class="tab4">
+
+        <table>
+
+            <tr>
+                <td>Grupo</td>
+                <td>Nomes</td>
+                <td colspan="3">Filmes</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Mulheres</td>
+            </tr>
+
+            <tr>
+                <td>Nezuko Kamado</td>
+                <td>Demon Slayer</td>
+                <td>The 100</td>
+                <td>Spider-Man: No Way Home</td>
+            </tr>
+
+            <tr>
+                <td>Tanjiro Kamado</td>
+                <td>Akame Ga kill</td>
+                <td>The big bang theory</td>
+                <td>Star Wars</td>
+            </tr>
+
+            <tr>
+                <td>Shinobu Kocha</td>
+                <td>Naruto</td>
+                <td>Two and a half a men</td>
+                <td>Silent Hill</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Homens</td>
+            </tr>
+
+            <tr>
+                <td>Inuske Hashibira</td>
+                <td>Pokemon</td>
+                <td>Black Mirror</td>
+                <td>Coracoes de ferro</td>
+            </tr>
+
+            <tr>
+                <td>Giyu Tomioka</td>
+                <td>Full metal Alchemist</td>
+                <td>Friends</td>
+                <td>Caso 39</td>
+            </tr>
+
+            <tr>
+                <td>Muzan Kibutsuji</td>
+                <td>Death Note</td>
+                <td>Lucifer</td>
+                <td>Lucy</td>
+            </tr>
+        
+        </table>
+
+    </div>
+    
+</body>
+</html>
