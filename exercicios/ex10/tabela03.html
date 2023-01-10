@@ -20,15 +20,46 @@
             background-color: white;
         }
 
-        .tab2 > table, .tab3 > table, .tab4 >table {
+        .tab2 > table, .tab3 > table, .tab4 > table, .calc > table {
             border-collapse: separate;
         }
 
-        td {
-            border: 1px solid black;
+        .tab5tr, .nt, .trmed {
+            background-color: #00f7ff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        td, th {
+            border: 1px solid #000000;
             padding: 10px;
             text-align: center;
         }
+
+        .tab5 > table {
+            width: 490px;
+        }
+        
+        .nob {
+            border: none;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+       }
+
+       .calchead {
+        border: none;
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+        border-left: 1px solid #000000;
+       }
+
+       .dec {
+        transition-duration: 0.3s;
+       }
+
+       .dec:hover {
+        background-color: #ebe6e6;
+       }
 
     </style>
 
@@ -201,7 +232,173 @@
         
         </table>
 
+        <h2>Desafio 4 modulo 3 tabelas</h2>
     </div>
-    
-</body>
+
+    <div class="tab5">
+
+        <table>
+
+            <caption>Boletim</caption>
+
+            <thead>
+                <tr class="tab5tr">
+                    <th rowspan="2">Area</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Media</th>
+                </tr>
+
+                <tr>
+                    <th class="nt">Nota 1</th>
+                    <th class="nt">Nota 2</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="5">Exatas</th>
+                </tr>
+
+                <tr>
+                    <td>Matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr class="trmed">
+                    <th colspan="4">Media de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>Historia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr class="trmed">
+                    <th colspan="4">Média de Humanas</th>
+                    <td> 0.0</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <br>
+
+    <div class="calc">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th class="calchead" colspan="4">Calculator</th>
+                </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>></td>
+                    </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>></td>
+                    </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>></td>
+                    </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>></td>
+                    </tr>
+
+                    <tr>
+                        <td class="nob" colspan="4"></td>></td>
+                    </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td class="dec">%</td>
+                    <td class="dec">CE</td>
+                    <td class="dec">C</td>
+                    <td class="dec">Undo</td>
+                </tr>
+                
+
+                <tr>
+                    <td class=dec>8</td>
+                    <td class=dec>7</td>
+                    <td class=dec>9</td>
+                    <td class=dec>X</td>
+                </tr>
+
+                <tr>
+                    <td class=dec>5</td>
+                    <td class=dec>5</td>
+                    <td class=dec>6</td>
+                    <td class=dec>-</td>
+                </tr>
+
+                <tr>
+                    <td class=dec>1</td>
+                    <td class=dec>2</td>
+                    <td class=dec>3</td>
+                    <td class=dec>+</td>
+                </tr>
+
+                <tr>
+                    <td class=dec>+/_</td>
+                    <td class=dec>0</td>
+                    <td class=dec>,</td>
+                    <td class=dec>=</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+</body> 
 </html>
