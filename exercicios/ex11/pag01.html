@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <style>
+
+body {
+            background-color: lightgray;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            background-color: white;
+        }
+
+        .tab2 > table, .tab3 > table, .tab4 > table, .calc > table {
+            border-collapse: separate;
+        }
+
+        .tab5tr, .nt, .trmed {
+            background-color: #00f7ff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        td, th {
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tab5 > table {
+            width: 490px;
+        }
+        
+        .nob {
+            border: none;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+       }
+
+       .calchead {
+        border: none;
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+        border-left: 1px solid #000000;
+       }
+
+       .dec {
+        transition-duration: 0.3s;
+       }
+
+       .dec:hover {
+        background-color: #ebe6e6;
+       }
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--spansao usada para dizer o quanto uma COLUNA ou linha vai ocupar na tabela, nesse caso, o td "b" esta a ocupar DUAS *COLUNUNAS*-->
+        </tr>
+
+        <tr>
+            <td rowspan="3">D</td> <!--espansao de linhas-->
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">L</td>
+        </tr>
+
+    </table>
+
+<h2>Desafio 1 modulo 3 de tabelas</h2>
+
+<div class="tab2">
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<h2>Desafio 2 modulo 3 de tabelas</h2>
+
+<div class="tab3">
+
+    <table>
+        <tr>
+            <td colspan ="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+        
+    </table>
+
+</div>
+
+<h2>Desafio 3 do modulo 3 de tabelas</h2>
+
+<div class="tab4">
+
+    <table>
+
+        <tr>
+            <td>Grupo</td>
+            <td>Nomes</td>
+            <td colspan="3">Filmes</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Mulheres</td>
+        </tr>
+
+        <tr>
+            <td>Nezuko Kamado</td>
+            <td>Demon Slayer</td>
+            <td>The 100</td>
+            <td>Spider-Man: No Way Home</td>
+        </tr>
+
+        <tr>
+            <td>Tanjiro Kamado</td>
+            <td>Akame Ga kill</td>
+            <td>The big bang theory</td>
+            <td>Star Wars</td>
+        </tr>
+
+        <tr>
+            <td>Shinobu Kocha</td>
+            <td>Naruto</td>
+            <td>Two and a half a men</td>
+            <td>Silent Hill</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Homens</td>
+        </tr>
+
+        <tr>
+            <td>Inuske Hashibira</td>
+            <td>Pokemon</td>
+            <td>Black Mirror</td>
+            <td>Coracoes de ferro</td>
+        </tr>
+
+        <tr>
+            <td>Giyu Tomioka</td>
+            <td>Full metal Alchemist</td>
+            <td>Friends</td>
+            <td>Caso 39</td>
+        </tr>
+
+        <tr>
+            <td>Muzan Kibutsuji</td>
+            <td>Death Note</td>
+            <td>Lucifer</td>
+            <td>Lucy</td>
+        </tr>
+    
+    </table>
+
+    <h2>Desafio 4 modulo 3 tabelas</h2>
+</div>
+
+<div class="tab5">
+
+    <table>
+        <caption>Boletim</caption>
+
+        <thead>
+            <tr class="tab5tr">
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Media</th>
+            </tr>
+
+            <tr>
+                <th class="nt">Nota 1</th>
+                <th class="nt">Nota 2</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="5">Exatas</th>
+            </tr>
+
+            <tr>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="trmed">
+                <th colspan="4">Media de Exatas</th>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="trmed">
+                <th colspan="4">Média de Humanas</th>
+                <td> 0.0</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+<br>
+
+<div class="calc">
+    <table>
+
+        <thead>
+            <tr>
+                <th class="calchead" colspan="4">Calculator</th>
+            </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>
+                </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>></td>
+                </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>></td>
+                </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>></td>
+                </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>></td>
+                </tr>
+
+                <tr>
+                    <td class="nob" colspan="4"></td>></td>
+                </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="dec">%</td>
+                <td class="dec">CE</td>
+                <td class="dec">C</td>
+                <td class="dec">Undo</td>
+            </tr>
+            
+
+            <tr>
+                <td class=dec>8</td>
+                <td class=dec>7</td>
+                <td class=dec>9</td>
+                <td class=dec>X</td>
+            </tr>
+
+            <tr>
+                <td class=dec>5</td>
+                <td class=dec>5</td>
+                <td class=dec>6</td>
+                <td class=dec>-</td>
+            </tr>
+
+            <tr>
+                <td class=dec>1</td>
+                <td class=dec>2</td>
+                <td class=dec>3</td>
+                <td class=dec>+</td>
+            </tr>
+
+            <tr>
+                <td class=dec>+/_</td>
+                <td class=dec>0</td>
+                <td class=dec>,</td>
+                <td class=dec>=</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>
+
+</body>
+</html>
