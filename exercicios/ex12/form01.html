@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+                <!--se eu quiser que o formulario NAO de sujestoes ja salvas no PC entao usa <form autocomplete="off"> -->
+    <form action="cadastro.php" method="get"> <!--method get e post: nao utilizar o method get quando tiver dados sensiveis, tipo senha, cartao de credito e etc, pois na url da busca ele mostra, ja o method post mascara isso. e nao pode usar o get quando o formulario ultrapassa 3.000 bytes (3.000 letras), envio de midias. -->
+        <p><label for="inome">Nome:</label>  <!--O label cria uma relacao entre a palavra e o objeto, ou seja, no formulario ele relaciona o que esta escrito com a caixa. -->
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="nome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+</body>
+</html>
