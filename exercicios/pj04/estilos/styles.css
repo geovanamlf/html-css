@@ -1,0 +1,14 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: 'mine';
+    src: url(../fonts/Minecrafter.Reg.ttf) format('truetype');
+    font-weight: normal;
+    font-weight: normal;
+}
+
+:root {
+    --mineGreen: #7CBC4C;
+    --mineBrown: #9E704C;
+}
+
