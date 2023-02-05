@@ -44,6 +44,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #21ff515d;
+
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 div#image {
