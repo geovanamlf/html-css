@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina simples</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #F99ABB;
+        }
+
+        nav > img {
+            border-radius: 50%;
+        }
+
+        nav > h1 {
+            color: #49AD51;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        ul > li {
+            display: inline;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #49AD51;   
+        }
+
+        ul > li:hover {
+            background-color: #9bfaa3b4;
+            cursor: pointer;
+            transition: 0.90s;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .container {
+            background-color: #ffb8d173;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 50px 10%;
+        }
+
+        .container h3 {
+            color: #49AD51;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .container p {
+            text-justify: auto;
+        }
+
+        #alinhar {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #alinhar > img {
+            border-radius: 10px;
+        }
+
+        #alinhar > img:hover {
+            border-radius: 50%;
+            transition: 0.80s;
+        }
+
+        footer {
+            background-color: #49AD51;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <img src="https://source.unsplash.com/random/120x120?cat/" alt="Logo">
+                <h1>CATS</h1>
+                    <ul>
+                    <li>Home</li>
+                    <li>Contat</li>
+                    <li>About us</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article class="container">
+                <h3>About cats</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem earum iusto voluptatem porro repudiandae dolorem atque incidunt, quibusdam suscipit, cupiditate eum perferendis  inventore sapiente! Esse ad totam optio dignissimoslorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat molestias officia sequi ullam, deserunt dignissimos, sit rerum earum recusandae velit veniam at sunt error ipsa soluta quo quos saepe odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam libero quo ipsam officiaomnis, saepe repellat quia assumenda obcaecati quis. Error voluptates provident enim ad voluptatibus natus accusamus, dolorem eum. Lorem ipsum dolor sit amet consectetur  adipisicing elit. Iusto perspiciatis aut facilis libero molestias magni omnis officiis cum, corporis corrupti tempore sed, esse, vero at. Odit quidem repudiandae quam rem.
+                </p>
+            </article>
+            <article class="container">
+                <h3>Cats pictures</h3>
+                <div id="alinhar">
+                    <img src="https://source.unsplash.com/random/150x150?cat/" alt="Gatinhos">
+                    <img src="https://source.unsplash.com/random/150x150?cat/" alt="Gatinhos">
+                    <img src="https://source.unsplash.com/random/150x150?cat/" alt="Gatinhos">
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>Para mais informacoes <a href="#">clique aqui.</a></p>
+        </footer>
+    </main>
+</body>
+</html>
